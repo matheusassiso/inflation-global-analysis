@@ -1,0 +1,25 @@
+# Data — raw files are not versioned (too large / reproducible via API)
+data/raw/
+data/processed/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.env
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials — never commit
+.kaggle/
+kaggle.json
