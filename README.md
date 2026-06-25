@@ -7,9 +7,6 @@
 
 > **Research question:** How did global inflation evolve across five decades, and do countries inflate together?
 
-*Part of the Applied Economics Research Portfolio — Project 01 of 55 | Section: EDA & Descriptive Analysis*  
-*MSc in Applied Economics — Universidade Federal de Viçosa (UFV)*
-
 ---
 
 ## Table of Contents
