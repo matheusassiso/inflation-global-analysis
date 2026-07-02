@@ -7,6 +7,14 @@
 
 > **Research question:** How did global inflation evolve across five decades, and do countries inflate together?
 
+![World Inflation Regimes](figures/02_world_inflation_regimes.png)
+
+### [Open the live interactive dashboard →](https://matheusassiso.github.io/inflation-global-analysis/)
+
+Hover, zoom, and pan through the world inflation regimes, six-country comparison, and Brazil ARIMA(1,1,1) forecast — no setup required.
+
+[![Dashboard preview](figures/07_dashboard_preview.png)](https://matheusassiso.github.io/inflation-global-analysis/)
+
 ---
 
 ## Table of Contents
@@ -666,6 +674,13 @@ jupyter nbconvert --to notebook --execute --inplace \
 
 All six figures are written to `figures/` automatically on execution.
 
+**Rebuild the interactive dashboard** (`docs/index.html`, published via GitHub Pages):
+
+```bash
+pip install plotly kaleido
+python scripts/build_dashboard.py
+```
+
 ---
 
 ## 18. Repository Structure
@@ -681,9 +696,14 @@ inflation-global-analysis/
 │   ├── 03_correlation_heatmap.png            # Pearson correlation matrix
 │   ├── 04_rolling_correlation_bra_usa.png    # 10-year rolling correlation
 │   ├── 05_acf_pacf_brazil.png               # ACF/PACF for ARIMA order selection
-│   └── 06_arima_forecast_brazil.png          # ARIMA(1,1,1) forecast 2023–2027
+│   ├── 06_arima_forecast_brazil.png          # ARIMA(1,1,1) forecast 2023–2027
+│   └── 07_dashboard_preview.png              # static preview of the live dashboard
 ├── notebooks/
 │   └── 01_inflation_global_analysis.ipynb    # fully executed notebook
+├── scripts/
+│   └── build_dashboard.py                    # generates docs/index.html (Plotly)
+├── docs/
+│   └── index.html                            # live dashboard, served via GitHub Pages
 ├── reports/
 │   └── report.md                             # extended technical write-up
 ├── requirements.txt
