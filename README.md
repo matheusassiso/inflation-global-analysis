@@ -9,11 +9,13 @@
 
 ![World Inflation Regimes](figures/02_world_inflation_regimes.png)
 
-### [Open the live interactive dashboard →](https://matheusassiso.github.io/inflation-global-analysis/)
+## Open the interactive dashboard locally
+
+[Download the repository ZIP](https://github.com/matheusassiso/inflation-global-analysis/archive/refs/heads/master.zip), extract it, and open [`docs/index.html`](docs/index.html) in your browser. Interactive charts load Plotly from the internet.
 
 Hover, zoom, and pan through the world inflation regimes, six-country comparison, and Brazil ARIMA(1,1,1) forecast — no setup required.
 
-[![Dashboard preview](figures/07_dashboard_preview.png)](https://matheusassiso.github.io/inflation-global-analysis/)
+![Dashboard preview](figures/07_dashboard_preview.png)
 
 ---
 
@@ -674,7 +676,7 @@ jupyter nbconvert --to notebook --execute --inplace \
 
 All six figures are written to `figures/` automatically on execution.
 
-**Rebuild the interactive dashboard** (`docs/index.html`, published via GitHub Pages):
+**Rebuild the interactive dashboard** (`docs/index.html`):
 
 ```bash
 pip install plotly kaleido
@@ -703,7 +705,7 @@ inflation-global-analysis/
 ├── scripts/
 │   └── build_dashboard.py                    # generates docs/index.html (Plotly)
 ├── docs/
-│   └── index.html                            # live dashboard, served via GitHub Pages
+│   └── index.html                            # interactive dashboard for local use
 ├── reports/
 │   └── report.md                             # extended technical write-up
 ├── requirements.txt
